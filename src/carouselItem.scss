@@ -1,0 +1,37 @@
+@import "./variables";
+
+.carouselItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 75vh;
+
+    &__image {
+        grid-column: 1/4;
+        grid-row: 1/6;
+        object-fit: cover;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    &__content {
+        grid-column: 1/4;
+        grid-row: 3/6;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 1));
+        color: $backgroundColor;
+    }
+
+    &__CTA {
+        background-color: $primaryColor;
+        color: $backgroundColor;
+        padding: 0.5em 1em;
+
+        border-radius: 5px;
+        border: 2px soild $secondaryColor;
+    }
+}

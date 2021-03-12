@@ -1,0 +1,10 @@
+.testimonialCard {
+    border: 1px soild hsl(0, 0%, 98%);
+    border-radius: 5px;
+    max-width: 28wv;
+
+    &__image {
+       width: 100%;
+       height: auto; 
+    }
+}

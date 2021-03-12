@@ -1,0 +1,28 @@
+
+@import "./variables";
+
+.primaryNavigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: $primaryColor;
+
+        &__brand{
+            color: $backgroundColor;
+        }
+
+
+        &__menu {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            list-style: none; 
+        }
+
+
+        &__menuLink {
+            color: $backgroundColor;
+            padding: 0 1em;
+        }
+}

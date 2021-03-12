@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+$fontStack: 'Titillium Web', halvetica, Verdana, Arial, sans-serif;
+$fontSize: calc(16px + (21 - 14) * (100vw - 412px) / (1920 - 412)); //Gør at den aldrig kan blive mindre end 16px
+
+$textColor: hsl(0, 0%, 8%);
+$primaryColor: hsl(220, 50%, 50%);
+$secondaryColor: hsl(240, 50%, 30%);
+
+$backgroundColor: hsl(0, 0%, 97%);
