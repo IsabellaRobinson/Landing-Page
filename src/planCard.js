@@ -17,7 +17,10 @@ function PlanCard({ heading, summary, price, link, features, getFrom }) {
 
                 <p className="title__conditions">/user/month*<br/>(billed annually)</p>
 
-                <a href= {link} className="title__link">  Try for <span className="title__link--caps"> free</span> &gt; </a>
+                <a href= {link} className="title__link"
+                 // eslint-disable-next-line
+                 onClick={() => gtag("event", "select_content", { "content_type": heading})} 
+                >  Try for <span className="title__link--caps"> free</span> &gt; </a>
             </section>
 
             <section className="planCard__features">
